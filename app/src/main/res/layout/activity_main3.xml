@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+
+    <EditText
+        android:id="@+id/mEnterPhoneNumberEditText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:hint="Phone Number">
+    </EditText>
+
+    <EditText
+        android:id="@+id/mMessageEditText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:lines="5"
+        android:hint="Enter Message Here"
+        android:gravity="top" />
+
+    <Button
+        android:id="@+id/mSendButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Send" />
+
+</LinearLayout>
