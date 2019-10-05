@@ -1,6 +1,7 @@
 package com.example.testapp;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 
@@ -15,16 +16,22 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void SendEmail(View view){
-        Intent intent = new Intent(this, Main2Activity.class);
+        Intent intent = new Intent(this, EmailSender.class);
+        intent.setType("text/html");
+        intent.putExtra("senderEmail", "emailaddress@gmail.com");
+        startActivity(intent);
+
+    }
+
+    public void PhoneCall(View view){
+        Intent intent = new Intent(Intent.ACTION_DIAL);
+        intent.setData(Uri.parse("tel:03001234567"));
         startActivity(intent);
     }
 
-    public void SendMessage(View view){
-        Intent intent = new Intent(this, Main3Activity.class);
+    public void SendSms(View view){
+        Intent intent = new Intent(this, sendSmsAct.class);
         startActivity(intent);
     }
-    public void Call(View view){
-        Intent intent = new Intent(this, Main4Activity.class);
-        startActivity(intent);
-    }
+
 }
