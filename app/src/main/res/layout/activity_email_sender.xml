@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
+    android:id="@+id/linearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
     android:orientation="vertical" >
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/to"
+        android:hint="To"
         android:id="@+id/mToEditText"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/subject"
+        android:hint="Subject"
         android:id="@+id/mSubjectEditText"/>
     <EditText
         android:id="@+id/mMessageEditText"
@@ -21,11 +21,13 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:gravity="top"
-        android:hint="@string/message" />
+        android:hint="Message" />
+
     <Button
+        android:id="@+id/mEmailSendButton"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_gravity="right"
-        android:text="@string/send"
-        android:onClick="mSendEmail"/>
+        android:onClick="mSendEmail"
+        android:text="Send" />
 </LinearLayout>
