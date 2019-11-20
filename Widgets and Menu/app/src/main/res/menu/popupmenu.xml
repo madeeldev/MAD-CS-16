@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/pop1"
+        android:checkable="false"
+        android:title=":: Phone" />
+    <item
+        android:id="@+id/pop2"
+        android:checkable="false"
+        android:title=":: Message" />
+    <item
+        android:id="@+id/pop3"
+        android:title=":: Email" />
+</menu>
